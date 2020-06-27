@@ -3,8 +3,6 @@
     --base-border-width: 2px;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&display=swap');
-
 body {
     font-family: 'Fira Mono', monospace;
     margin: calc(var(--base-distance) * 2);
