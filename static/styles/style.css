@@ -28,6 +28,8 @@ section, header {
 
     margin-bottom: var(--base-distance);
     margin-top: var(--base-distance);
+    margin-left: 0;
+    margin-right: 0;
 
     padding-left: calc(var(--base-distance) * 2);
     padding-right: var(--base-distance);
@@ -35,4 +37,14 @@ section, header {
 
 ul, ol {
     padding-left: calc(var(--base-distance) * 2);
+}
+
+.image-portrait {
+    max-width: 100%;
+}
+
+@media (min-width: 640px) {
+    .image-portrait {
+        float: right;
+    }
 }
