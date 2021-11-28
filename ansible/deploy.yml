@@ -1,0 +1,20 @@
+---
+- name: Deploy
+  hosts: webservers
+  remote_user: artushak_website
+
+  tasks:
+  - name: Switch website to maintenance
+    ansible.builtin.file:
+      src: ../artushak.ru_maitenance
+      dest: /srv/http/artushak.ru/artushak.ru
+      state: link
+  - name: Copy static website files to remote host
+    ansible.builtin.copy:
+      src: ../output
+      dest: /srv/http/artushak.ru_website
+  - name: Switch website to running
+    ansible.builtin.file:
+      src: ../artushak.ru_website/artushak
+      dest: /srv/http/artushak.ru/artushak.ru
+      state: link

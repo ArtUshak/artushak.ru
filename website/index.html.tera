@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Артём Хандамиров</title>
-    <link href="static/styles/style.css" rel="stylesheet" type="text/css" />
+    <link href="{{ get_asset_url(name="style") | safe }}" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&display=swap" rel="stylesheet" />
 </head>
 
@@ -17,9 +17,9 @@
 
         <section id="about">
             <div>
-                <a href="static/images/khandamirov-artiom-photo1.jpg">
+                <a href="{{ get_asset_url(name="khandamirov-artiom-photo1") | safe }}">
                     <img style="max-width: calc(min(300px,100%));" class="image-portrait"
-                        src="static/images/khandamirov-artiom-photo1.jpg" alt="Фотография Артёма Хандамирова" />
+                        src="{{ get_asset_url(name="khandamirov-artiom-photo1") | safe }}" alt="Фотография Артёма Хандамирова" />
                 </a>
             </div>
 

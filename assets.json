@@ -1,0 +1,34 @@
+{
+    "assets": {
+        "style-scss": {
+            "extension": "scss",
+            "source": {
+                "File": "styles/style.scss"
+            }
+        },
+        "style": {
+            "output_base_path": "styles",
+            "extension": "css",
+            "source": {
+                "Filtered": {
+                    "filter_name": "SCSS2CSS",
+                    "input_names": [
+                        "style-scss"
+                    ],
+                    "options": {}
+                }
+            }
+        },
+        "khandamirov-artiom-photo1": {
+            "output_base_path": "images",
+            "extension": "jpg",
+            "source": {
+                "File": "images/khandamirov-artiom-photo1.jpg"
+            }
+        }
+    },
+    "public_assets": [
+        "style",
+        "khandamirov-artiom-photo1"
+    ]
+}
