@@ -33,7 +33,8 @@ jobs:
           internal/
         key: ${{ runner.os }}-cache
     - name: Install artushak-static-web-packer
-      run: cargo install --git https://github.com/ArtUshak/artushak-static-web-packer.git
+      # TODO: publish this crate to to crates.io
+      run: cargo install --git https://github.com/ArtUshak/artushak-static-web-packer.git --force
     - name: Build static website
       run: artushak-static-web-packer
     - name: Deploy using ansible
