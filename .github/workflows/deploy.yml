@@ -23,7 +23,6 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         known_hosts: ${{ secrets.KNOWN_HOSTS }}
     - name: Install artushak-static-web-packer
-      # TODO: publish this crate to to crates.io
       run: cargo install --git https://github.com/ArtUshak/artushak-static-web-packer.git
     - name: Build static website
       run: artushak-static-web-packer
