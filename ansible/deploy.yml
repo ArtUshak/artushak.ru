@@ -11,8 +11,8 @@
       state: link
   - name: Copy static website files to remote host
     ansible.builtin.copy:
-      src: ../output
-      dest: /srv/http/artushak.ru_website
+      src: ../output/
+      dest: /srv/http/artushak.ru_website/artushak
   - name: Switch website to running
     ansible.builtin.file:
       src: ../artushak.ru_website/artushak
