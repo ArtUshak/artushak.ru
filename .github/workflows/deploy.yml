@@ -22,6 +22,16 @@ jobs:
       with:
         key: ${{ secrets.SSH_KEY }}
         known_hosts: ${{ secrets.KNOWN_HOSTS }}
+    - name: Cache files
+      uses: actions/cache@v2
+      with:
+        path: |
+          ~/.cargo/bin/
+          ~/.cargo/registry/index/
+          ~/.cargo/registry/cache/
+          ~/.cargo/git/db/
+          internal/
+        key: ${{ runner.os }}-cache
     - name: Install artushak-static-web-packer
       # TODO: publish this crate to to crates.io
       run: cargo install --git https://github.com/ArtUshak/artushak-static-web-packer.git
