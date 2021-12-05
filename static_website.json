@@ -18,7 +18,6 @@
     "copy_output_directory_path": "output",
     "copy_input_directory_path": "website",
     "copy_paths": [
-        "yandex_e2fe19717388f9a8.html",
         "yandex_095bbcbcad1236cf.html",
         "robots.txt"
     ]

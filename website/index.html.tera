@@ -4,8 +4,10 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Портфолио Артёма Хандамирова" />
     <title>Артём Хандамиров</title>
     <link href="{{ get_asset_url(name="style") | safe }}" rel="stylesheet" type="text/css" />
+    <link href="{{ get_asset_url(name="favicon") | safe }}" rel="icon" type="image/svg+xml" />
     <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&display=swap" rel="stylesheet" />
 </head>
 

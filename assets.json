@@ -1,5 +1,34 @@
 {
     "assets": {
+        "favicon-svg": {
+            "extension": "svg",
+            "source": {
+                "File": "images/favicon.svg"
+            }
+        },
+        "favicon": {
+            "output_base_path": "images",
+            "extension": "svgz",
+            "source": {
+                "Filtered": {
+                    "filter_name": "RunExecutable",
+                    "input_names": [
+                        "favicon-svg"
+                    ],
+                    "options": {
+                        "executable_name": {
+                            "String": "gzip"
+                        },
+                        "extra_arguments": {
+                            "StringList": [
+                                "--to-stdout"
+                            ]
+                        },
+                        "output_is_stdout": "Flag"
+                    }
+                }
+            }
+        },
         "style-scss": {
             "extension": "scss",
             "source": {
@@ -28,6 +57,7 @@
         }
     },
     "public_assets": [
+        "favicon",
         "style",
         "khandamirov-artiom-photo1"
     ]
