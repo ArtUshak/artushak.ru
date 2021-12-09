@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <meta name="description" content="Портфолио Артёма Хандамирова" />
+    <meta name="description" content="Артём Хандамиров, Java-разработчик из Москвы" />
     <title>Артём Хандамиров</title>
     <link href="{{ get_asset_url(name="style") | safe }}" rel="stylesheet" type="text/css" />
     <link href="{{ get_asset_url(name="favicon") | safe }}" rel="icon" type="image/svg+xml" />
