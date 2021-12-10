@@ -35,7 +35,7 @@ jobs:
     - name: Install artushak-static-web-packer
       # TODO: publish this crate to to crates.io
       run: |
-        [[ ! -e ~/.cargo/bin/cargo-install-update ]] && cargo install cargo-install-update
+        [[ ! -e ~/.cargo/bin/cargo-install-update ]] && cargo install cargo-update
         [[ ! -e ~/.cargo/bin/artushak-static-web-packer ]] && cargo install --git https://github.com/ArtUshak/artushak-static-web-packer.git
         cargo install-update
     - name: Build static website
