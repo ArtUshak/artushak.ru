@@ -37,7 +37,7 @@ jobs:
       run: |
         [[ ! -e ~/.cargo/bin/cargo-install-update ]] && cargo install cargo-update
         [[ ! -e ~/.cargo/bin/artushak-static-web-packer ]] && cargo install --git https://github.com/ArtUshak/artushak-static-web-packer.git
-        cargo install-update
+        cargo install-update --all
     - name: Build static website
       run: artushak-static-web-packer
     - name: Deploy using ansible
