@@ -26,12 +26,12 @@ jobs:
       uses: actions/cache@v2
       with:
         path: internal/
-        key: ${{ runner.os }}-cache-${{ github.sha }}
+        key: ${{ runner.os }}-cache-1-${{ github.sha }}
     - name: Cache Lint
       uses: actions/cache@v2
       with:
         path: internal/
-        key: ${{ runner.os }}-cache-${{ hashFiles('internal/**') }}
+        key: ${{ runner.os }}-cache-1-${{ hashFiles('internal/**') }}
         restore-keys: |
           ${{ runner.os }}-cache-
     - name: Debug print tree
