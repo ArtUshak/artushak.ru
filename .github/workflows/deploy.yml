@@ -22,28 +22,27 @@ jobs:
       with:
         key: ${{ secrets.SSH_KEY }}
         known_hosts: ${{ secrets.KNOWN_HOSTS }}
-    - name: Restore internal directory
-      continue-on-error: true
-      uses: actions/download-artifact@v2
+    - name: Cache Lint Hack
+      uses: actions/cache@v2
       with:
-        name: directory-archive-internal
-        path: internal-restored.tar.gz
-    - name: Unpack internal directory
-      continue-on-error: true
-      run: |
-        [[ -e internal.tar.gz ]] && tar --extract --gzip --file internal-restored.tar.gz
+        path: internal/
+        key: ${{ runner.os }}-cache-${{ github.sha }}
+    - name: Cache Lint
+      uses: actions/cache@v2
+      with:
+        path: internal/
+        key: ${{ runner.os }}-cache-${{ hashFiles('internal/**') }}
+        restore-keys: |
+          ${{ runner.os }}-cache-
+    - name: Debug print tree
+      run: tree
     - name: Install artushak-static-web-packer
       # TODO: publish this crate to to crates.io
       run: |
-        cargo install --git https://github.com/ArtUshak/artushak-static-web-packer.git
+        [[ ! -e ~/.cargo/bin/cargo-install-update ]] && cargo install cargo-update
+        [[ ! -e ~/.cargo/bin/artushak-static-web-packer ]] && cargo install --git https://github.com/ArtUshak/artushak-static-web-packer.git
+        cargo install-update --all --git
     - name: Build static website
       run: artushak-static-web-packer
-    - name: Pack internal directory
-      run: tar --create --gzip --file internal.tar.gz internal
-    - name: Save internal directory
-      uses: actions/upload-artifact@v2
-      with:
-        name: directory-archive-internal
-        path: internal.tar.gz
     - name: Deploy using ansible
       run: ansible-playbook -i ansible/inventory ansible/deploy.yml
