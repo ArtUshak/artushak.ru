@@ -29,6 +29,7 @@ jobs:
         name: directory-archive-internal
         path: internal-restored.tar.gz
     - name: Unpack internal directory
+      continue-on-error: true
       run: |
         [[ -e internal.tar.gz ]] && tar --extract --gzip --file internal-restored.tar.gz
     - name: Install artushak-static-web-packer
