@@ -22,6 +22,8 @@ jobs:
       with:
         key: ${{ secrets.SSH_KEY }}
         known_hosts: ${{ secrets.KNOWN_HOSTS }}
+    - name: Experimental test
+      run: ls -lAh /github
     - name: Cache files
       uses: actions/cache@v2
       with:
@@ -40,5 +42,5 @@ jobs:
         cargo install-update --all --git
     - name: Build static website
       run: artushak-static-web-packer
-    - name: Deploy using ansible
-      run: ansible-playbook -i ansible/inventory ansible/deploy.yml
+#    - name: Deploy using ansible
+#      run: ansible-playbook -i ansible/inventory ansible/deploy.yml
