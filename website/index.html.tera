@@ -133,6 +133,9 @@
                         </li>
                     </ul>
                 </li>
+                <li>
+                    Раст
+                </li>
             </ul>
         </section>
 
@@ -192,6 +195,14 @@
                 <p><b>Код</b>: не опубликован</p>
                 <p>Сайт для получения информации о пользователях <a href="https://bitclout.com/">bitclout.com</a> и
                     формирования картинок с этой информацией: аватаркой, числом подписчиков и так далее.</p>
+            </section>
+
+            <section class="project" id="project-artushak-static-web-packer">
+                <h3>artushak-static-web-packer</h3>
+                <p><b>Языки</b>: Раст</p>
+                <p><b>Библиотеки</b>: serde, tera, clap</p>
+                <p><b>Код</b>: <a href="https://github.com/ArtUshak/artushak-static-web-packer">artushak-static-web-packer</a> на Гитхабе</p>
+                <p>Простой генератор статических сайтов. Обрабатывает статические файлы, сохраняя их с уникальными путями для HTTP-кэширования. Обрабатывает <a href="https://tera.netlify.app/">Tera</a>-шаблоны шаблоны для HTML-страниц.</p>
             </section>
         </section>
     </main>
