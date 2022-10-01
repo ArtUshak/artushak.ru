@@ -89,6 +89,12 @@
                         <li>
                             <a href="https://python-pillow.org/">Pillow</a> — библиотека для работы с изображениями
                         </li>
+                        <li>
+                            <a href="https://fastapi.tiangolo.com/">fastapi</a> — асинхронный веб-фреймворк для создания API
+                        </li>
+                        <li>
+                            <a href="https://pandas.pydata.org/">pandas</a> — библиотека для работы с табличными данными
+                        </li>
                     </ul>
                 </li>
                 <li>
@@ -109,7 +115,7 @@
                             WPF — GUI-фреймворк
                         </li>
                         <li>
-                            Unity — игровой движок
+                            <a href="https://unity.com/">Unity</a> — игровой движок
                         </li>
                     </ul>
                 </li>
@@ -117,7 +123,13 @@
                     Джава
                     <ul>
                         <li>
-                            Spring — фреймворк
+                            <a href="https://spring.io/">Spring</a> — фреймворк
+                        </li>
+                        <li>
+                            <a href="https://projectlombok.org/">Lombok</a> — библиотека с аннотациями для генерации кода
+                        </li>
+                        <li>
+                            <a href="https://github.com/FasterXML/jackson">Jackson</a> — библиотека для парсинга данных в форматах JSON, XML и других
                         </li>
                     </ul>
                 </li>
