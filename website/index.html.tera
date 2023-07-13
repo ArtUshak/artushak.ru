@@ -202,7 +202,7 @@
                 <p><b>Языки</b>: Раст</p>
                 <p><b>Библиотеки</b>: serde, tera, clap</p>
                 <p><b>Код</b>: <a href="https://github.com/ArtUshak/artushak-static-web-packer">artushak-static-web-packer</a> на Гитхабе</p>
-                <p>Простой генератор статических сайтов. Обрабатывает статические файлы, сохраняя их с уникальными путями для HTTP-кэширования. Обрабатывает <a href="https://tera.netlify.app/">Tera</a>-шаблоны шаблоны для HTML-страниц.</p>
+                <p>Простой генератор статических сайтов. Обрабатывает статические файлы, сохраняя их с уникальными путями для HTTP-кэширования. Обрабатывает <a href="https://tera.netlify.app/">Tera</a>-шаблоны для HTML-страниц.</p>
             </section>
         </section>
     </main>
