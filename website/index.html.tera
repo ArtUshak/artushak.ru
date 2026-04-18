@@ -66,7 +66,7 @@
         </section>
 
         <section id="skills">
-            <h2>Навыки: языки и библиотеки</h2>
+            <h2>Навыки: языки, библиотеки и инструменты</h2>
 
             <ul>
                 <li>
@@ -145,7 +145,19 @@
                         <li>
                             <a href="https://bevy.org">Bevy</a> — низкоуровневый игровой движок
                         </li>
+                        <li>
+                            <a href="https://tokio.rs/">Tokio</a> — асинхронный рантайм
+                        </li>
                     </ul>
+                </li>
+                <li>
+                    <a href="https://docs.ansible.com>Ansible</a> — инструмент для автоматизированной настройки серверов по SSH
+                </li>
+                <li>
+                    <a href="https://www.jenkins.io>Дженкинс</a> — система автоматизации CI/CD-задач
+                </li>
+                <li>
+                    <a href="https://argo-cd.readthedocs.io>Арго CD</a> — инструмент для автоматизированного деплоя в K8S по методологии GitOps
                 </li>
             </ul>
         </section>
@@ -196,7 +208,7 @@
                 <p><b>Код</b>: <a href="https://github.com/ArtUshak/mediawiki-upgrader">mediawiki-upgrader</a> на
                     Гитхабе</p>
                 <p>Скрипт для обновления движка MediaWiki, расширений и тем оформления. Написан для <a
-                        href="#project-absurdopedia-wiki-admin">работы сайта absurdopedia.wiki</a>.</p>
+                        href="#project-absurdopedia-wiki-admin">работы сайта absurdopedia.wiki</a>. Впоследствии заменён на <a href="#project-absurdopedia-ansible">ansible-плейбук</a>.</p>
             </section>
 
             <section class="project" id="project-clout-pictures">
@@ -214,6 +226,15 @@
                 <p><b>Библиотеки</b>: serde, tera, clap</p>
                 <p><b>Код</b>: <a href="https://github.com/ArtUshak/artushak-static-web-packer">artushak-static-web-packer</a> на Гитхабе</p>
                 <p>Простой генератор статических сайтов. Обрабатывает статические файлы, сохраняя их с уникальными путями для HTTP-кэширования. Обрабатывает <a href="https://tera.netlify.app/">Tera</a>-шаблоны для HTML-страниц.</p>
+            </section>
+
+            <section class="project" id="project-absurdopedia-ansible">
+                <h3>absurdopedia-as-code</h3>
+                <p><b>Язык</b>: yaml (ansible)</p>
+                <p><b>Код</b>: <a href="https://github.com/ArtUshak/absurdopedia-as-code">absurdopedia-as-code</a> на
+                    Гитхабе</p>
+                <p>Ansible-плейбук для обновления двика MediaWiki, расширений и тем оформления. Написан для <a
+                        href="#project-absurdopedia-wiki-admin">работы сайта absurdopedia.wiki</a>.</p>
             </section>
         </section>
     </main>
