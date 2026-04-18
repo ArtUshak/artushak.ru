@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <meta name="description" content="Артём Хандамиров, Java-разработчик из Москвы" />
+    <meta name="description" content="Артём Хандамиров, Java-разработчик и девопс-инженер из Москвы" />
     <title>Артём Хандамиров</title>
     <link href="{{ get_asset_url(name="style") | safe }}" rel="stylesheet" type="text/css" />
     <link href="{{ get_asset_url(name="favicon") | safe }}" rel="icon" type="image/svg+xml" />
@@ -28,7 +28,7 @@
             <h2>О себе</h2>
 
             <p>Живу в Москве, учился в <a href="https://mai.ru/">МАИ</a> на факультете «Системы управления, информатика и
-                электроэнергетика» на программиста, закончил институт в 2021 году. Работаю Java-разработчиком.
+                электроэнергетика» на программиста, закончил институт в 2021 году. Работаю Java-разработчиком и девопс-инженером.
             </p>
         </section>
 
