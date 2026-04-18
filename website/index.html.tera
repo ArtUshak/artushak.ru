@@ -222,7 +222,7 @@
 
             <section class="project" id="project-artushak-static-web-packer">
                 <h3>artushak-static-web-packer</h3>
-                <p><b>Языки</b>: Раст</p>
+                <p><b>Язык</b>: Раст</p>
                 <p><b>Библиотеки</b>: serde, tera, clap</p>
                 <p><b>Код</b>: <a href="https://github.com/ArtUshak/artushak-static-web-packer">artushak-static-web-packer</a> на Гитхабе</p>
                 <p>Простой генератор статических сайтов. Обрабатывает статические файлы, сохраняя их с уникальными путями для HTTP-кэширования. Обрабатывает <a href="https://tera.netlify.app/">Tera</a>-шаблоны для HTML-страниц.</p>
@@ -230,7 +230,8 @@
 
             <section class="project" id="project-absurdopedia-ansible">
                 <h3>absurdopedia-as-code</h3>
-                <p><b>Язык</b>: yaml (ansible)</p>
+                <p><b>Язык</b>: yaml</p>
+                <p><b>Инструменты</b>: Ansible</p>
                 <p><b>Код</b>: <a href="https://github.com/ArtUshak/absurdopedia-as-code">absurdopedia-as-code</a> на
                     Гитхабе</p>
                 <p>Ansible-плейбук для обновления двика MediaWiki, расширений и тем оформления. Написан для <a
