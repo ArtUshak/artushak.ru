@@ -146,18 +146,18 @@
                             <a href="https://bevy.org">Bevy</a> — низкоуровневый игровой движок
                         </li>
                         <li>
-                            <a href="https://tokio.rs/">Tokio</a> — асинхронный рантайм
+                            <a href="https://tokio.rs">Tokio</a> — асинхронный рантайм
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <a href="https://docs.ansible.com>Ansible</a> — инструмент для автоматизированной настройки серверов по SSH
+                    <a href="https://docs.ansible.com">Ansible</a> — инструмент для автоматизированной настройки серверов по SSH
                 </li>
                 <li>
-                    <a href="https://www.jenkins.io>Дженкинс</a> — система автоматизации CI/CD-задач
+                    <a href="https://www.jenkins.io">Дженкинс</a> — система автоматизации CI/CD-задач
                 </li>
                 <li>
-                    <a href="https://argo-cd.readthedocs.io>Арго CD</a> — инструмент для автоматизированного деплоя в K8S по методологии GitOps
+                    <a href="https://argo-cd.readthedocs.io">Арго CD</a> — инструмент для автоматизированного деплоя в K8S по методологии GitOps
                 </li>
             </ul>
         </section>
