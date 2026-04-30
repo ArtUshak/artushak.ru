@@ -212,7 +212,7 @@
             </section>
 
             <section class="project" id="project-clout-pictures">
-                <h3><a href="https://clout.pictures/">clout.pictures</a></h3>
+                <h3>clout.pictures</h3>
                 <p><b>Языки</b>: Питон, ТайпСкрипт</p>
                 <p><b>Библиотеки</b>: Django, Django REST Framework, starlette, aiohttp, Pillow</p>
                 <p><b>Код</b>: не опубликован</p>
