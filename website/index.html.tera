@@ -234,7 +234,7 @@
                 <p><b>Инструменты</b>: Ansible</p>
                 <p><b>Код</b>: <a href="https://github.com/ArtUshak/absurdopedia-as-code">absurdopedia-as-code</a> на
                     Гитхабе</p>
-                <p>Ansible-плейбук для обновления двика MediaWiki, расширений и тем оформления. Написан для <a
+                <p>Ansible-плейбук для обновления движка MediaWiki, расширений и тем оформления. Написан для <a
                         href="#project-absurdopedia-wiki-admin">работы сайта absurdopedia.wiki</a>.</p>
             </section>
         </section>
